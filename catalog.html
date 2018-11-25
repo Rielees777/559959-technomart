@@ -20,7 +20,8 @@
         <span class="addr">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
       </p>
       <ul class="login-menu">
-        <li class="login-name">Равшан Джамшутович</li>
+        <li class="login-name"><a href="#">Равшан Джамшутович</a></li>
+        <li class="logout"><a href="#" aria-label="Выйти"></a></li>
         <li class="my-orders"><a href="#">Мои заказы</a></li>
         <li class="my-account"><a href="#">Личный кабинет</a></li>
       </ul>
@@ -54,24 +55,24 @@
           <legend>Производители:</legend>
           <ul>
             <li class="filter-option">
-              <input class="vissually-hidden filter-input filter-input-checkbox" name="bosh" checked>
-              <label for="filter bosh">Bosh</label>
+              <input class="vissually-hidden filter-input filter-input-checkbox" name="bosh" id="filter-bosh" checked>
+              <label for="filter-bosh">Bosh</label>
             </li>
             <li class="filter-option">
-              <input class="vissually-hidden filter-input filter-input-checkbox" name="interscol">
-              <label for="filter interscol">Интерскол</label>
+              <input class="vissually-hidden filter-input filter-input-checkbox" name="interscol" id="filter-interscol">
+              <label for="filter-interscol">Интерскол</label>
             </li>
             <li class="filter-option">
-              <input class="vissually-hidden filter-input filter-input-checkbox" name="makita" checked>
-              <label for="filter makita">makita</label>
+              <input class="vissually-hidden filter-input filter-input-checkbox" name="makita" id="filter-makita" checked>
+              <label for="filter-makita">makita</label>
             </li>
             <li class="filter-option">
-              <input class="vissually-hidden filter-input filter-input-checkbox" name="dewalt">
-              <label for="filter dewalt">Dewalt</label>
+              <input class="vissually-hidden filter-input filter-input-checkbox" name="dewalt" id="filter-dewalt">
+              <label for="filter-dewalt">Dewalt</label>
             </li>
             <li class="filter-option">
-              <input class="vissually-hidden filter-input filter-input-checkbox" name="hitachi">
-              <label for="filter hitachi">Hitachi</label>
+              <input class="vissually-hidden filter-input filter-input-checkbox" name="hitachi" id="filter-hitachi">
+              <label for="filter-hitachi">Hitachi</label>
             </li>
           </ul>
         </fieldset>
@@ -82,9 +83,11 @@
           <ul>
             <li class="filter-option">
               <input class="visually-hidden filter-input filter-input-radio" name="power-type" type="radio" value="battery" id="filter-battery" checked>
+              <label for="filter-battery">Аккумуляторные</label>
             </li>
             <li class="filter-option">
               <input class="visually-hidden filter-input filter-input-radio" name="power-type" type="radio" value="mains-supply" id="filter-mains-supply">
+              <label for="filter-mains-supply">Сетевые</label>
             </li>
           </ul>
         </fieldset>

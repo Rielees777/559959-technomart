@@ -3,13 +3,17 @@
   <head>
     <meta charset="utf-8">
     <title>Техномарт</title>
-
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="inner-page">
     <header class="main-header">
       <a class="index-header-logo">Техномарт</a>
       <ul class="top-menu">
-        <li><a  class="search-nav" href="#">Поиск</a></li>
+        <li><form action="." method="get">
+          <input type="search" class="search-nav" placeholder="Поиск">
+          </form></li>
         <li><a class="bookmarks" href="#">Закладки</a></li>
         <li><a class="basket" href="#">Корзина</a></li>
         <li><a class="orders" href="#">Оформить заказ</a></li>
@@ -48,53 +52,55 @@
           <li><a>Перфораторы</a></li>
         </ul>
       </header>
-      <section class="filter">
+      <section class="filters">
         <h2 class="vissually-hidden">Фильтр товаров</h2>
         <!-- Фильтрация по производителям -->
-        <fieldset>
-          <legend>Производители:</legend>
-          <ul>
-            <li class="filter-option">
-              <input class="vissually-hidden filter-input filter-input-checkbox" name="bosh" id="filter-bosh" checked>
-              <label for="filter-bosh">Bosh</label>
-            </li>
-            <li class="filter-option">
-              <input class="vissually-hidden filter-input filter-input-checkbox" name="interscol" id="filter-interscol">
-              <label for="filter-interscol">Интерскол</label>
-            </li>
-            <li class="filter-option">
-              <input class="vissually-hidden filter-input filter-input-checkbox" name="makita" id="filter-makita" checked>
-              <label for="filter-makita">makita</label>
-            </li>
-            <li class="filter-option">
-              <input class="vissually-hidden filter-input filter-input-checkbox" name="dewalt" id="filter-dewalt">
-              <label for="filter-dewalt">Dewalt</label>
-            </li>
-            <li class="filter-option">
-              <input class="vissually-hidden filter-input filter-input-checkbox" name="hitachi" id="filter-hitachi">
-              <label for="filter-hitachi">Hitachi</label>
-            </li>
-          </ul>
-        </fieldset>
+        <form class="filter" action="" method="get">
+          <fieldset>
+            <legend>Производители:</legend>
+            <ul>
+              <li class="filter-option">
+                <input class="vissually-hidden filter-input filter-input-checkbox" type="checkbox" name="bosh" id="filter-bosh" checked>
+                <label for="filter-bosh">Bosh</label>
+              </li>
+              <li class="filter-option">
+                <input class="vissually-hidden filter-input filter-input-checkbox" type="checkbox" name="interscol" id="filter-interscol">
+                <label for="filter-interscol">Интерскол</label>
+              </li>
+              <li class="filter-option">
+                <input class="vissually-hidden filter-input filter-input-checkbox" type="checkbox" name="makita" id="filter-makita" checked>
+                <label for="filter-makita">makita</label>
+              </li>
+              <li class="filter-option">
+                <input class="vissually-hidden filter-input filter-input-checkbox" type="checkbox" name="dewalt" id="filter-dewalt" disabled>
+                <label for="filter-dewalt">Dewalt</label>
+              </li>
+              <li class="filter-option">
+                <input class="vissually-hidden filter-input filter-input-checkbox" type="checkbox" name="hitachi" id="filter-hitachi">
+                <label for="filter-hitachi">Hitachi</label>
+              </li>
+            </ul>
+          </fieldset>
 
-        <!-- Фильтрация по питанию -->
-        <fieldset>
-          <legend>Питание:</legend>
-          <ul>
-            <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input-radio" name="power-type" type="radio" value="battery" id="filter-battery" checked>
-              <label for="filter-battery">Аккумуляторные</label>
-            </li>
-            <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input-radio" name="power-type" type="radio" value="mains-supply" id="filter-mains-supply">
-              <label for="filter-mains-supply">Сетевые</label>
-            </li>
-          </ul>
-        </fieldset>
-        <!-- Кнопка -->
-        <button class="filter-button button" type="submit">
-          Показать
-        </button>
+          <!-- Фильтрация по питанию -->
+          <fieldset>
+            <legend>Питание:</legend>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-radio" name="power-type" type="radio" value="battery" id="filter-battery" checked>
+                <label for="filter-battery">Аккумуляторные</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-radio" name="power-type" type="radio" value="mains-supply" id="filter-mains-supply">
+                <label for="filter-mains-supply">Сетевые</label>
+              </li>
+            </ul>
+          </fieldset>
+          <!-- Кнопка -->
+          <button class="filter-button" type="submit">
+            Показать
+          </button>
+        </form>
       </section>
       <!-- Здесь будут элементы для сортировки каталога -->
       <section class="catalog">
@@ -204,7 +210,7 @@
         <section class="modal modal-add-basket">
           <p class="product-add-basket">Товар добавлен в корзину!</p>
           <p>
-            <a class="formalise button" href="#">Оформить заказ</a>
+            <a class="formalise-button" href="#">Оформить заказ</a>
             <button class="continue-shopping" type="button">Продолжить покупки</button>
           </p>
           <button class="modal-close" type="button">Закрыть</button>

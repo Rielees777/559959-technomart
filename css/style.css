@@ -1,0 +1,271 @@
+body {
+  margin: 0;
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+
+}
+.inner-page {
+
+}
+
+a {
+  text-decoration: none;
+}
+h2 {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+p {
+  font-family: "PT Sans", Arial, sans-serif;
+
+}
+
+.button {
+  font: inherit;
+
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  background-color: #ee3643;
+  border-radius: 3px;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #ca2c37;
+}
+.button:active {
+ background-color: #ba2732;
+}
+.main-header {
+  font-size: 17px;
+  line-height: 18px;
+
+  background-color: #f3f7f8;
+}
+.index-header-logo {
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  vertical-align: middle;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background-color: #ee3643;
+}
+.index-header-logo:focus,
+.index-header-logo:active {
+  background-color: #ba2732;
+}
+.top-menu {
+  background-color: #32425c;
+}
+.top-menu li {
+  list-style: none;
+}
+.search-nav {
+  color: #ffffff;
+  background-color: #32425c;
+}
+.search-nav:hover,
+.bookmarks:hover,
+.basket:hover {
+  background-color: #212a3a;
+}
+.search-nav:focus-within {
+  color: #000000;
+  background-color: #ffffff;
+}
+.bookmarks,
+.basket {
+  color: #ffffff;
+}
+.bookmarks:active,
+.basket:active {
+  color: #8b8e94;
+  background-color: #161d29;
+}
+.orders {
+  text-transform: none;
+  color: #ffffff;
+  background-color: #63a63e;
+}
+.orders:focus {
+  background-color: #5fbb2d;
+}
+.orders:active {
+  color: #a8c29a;
+  background-color: #5fbb2d;
+}
+.header-description {
+  font-style: italic;
+  color: #ee3643;
+}
+.tel {
+  color: #ee3643;
+}
+.addr {
+  color: #32425c;
+}
+.login-menu li {
+  list-style: none;
+}
+.my-orders a,
+.my-account a {
+  font-size: 16px;
+  line-height: 18px;
+  color: #32425c;
+  text-decoration: underline;
+}
+.my-orders a:hover,
+.my-account a:hover,
+.login-link a:hover,
+.registration-link a:hover {
+  color: #ee3643;
+}
+.my-orders a:active,
+.my-account a:active,
+.login-name:active,
+.login-link a:active,
+.registration-link a:active {
+  color: #c5c5c5;
+}
+.login-link a,
+.registration-link a,
+.login-name a {
+  color: #000000;
+  background-color: #ffffff;
+}
+.nav-menu {
+  background-color: #32425c;
+}
+.site-menu li {
+  list-style: none;
+}
+.site-menu a {
+  color: #ffffff;
+}
+.site-menu a:hover {
+  background-color: #293449;
+}
+.site-menu a:active {
+  color: #8e939c;
+  background-color: #1d2739;
+}
+.delivery-company li {
+  list-style: none;
+}
+/* Catalog*/
+.page-title {
+  background-color: #f2f6f8;
+}
+.breadcrumps {
+  font-family: "PT Sans", Arial, sans-serif;
+  list-style: none;
+  text-transform: uppercase;
+}
+.filter fieldset {
+  border: none;
+}
+.filter legend {
+  font-size: 17px;
+  line-height: 30px;
+}
+.filter ul {
+  list-style: none;
+  line-height: 20px;
+}
+.filter-input:hover + label,
+.filter-input:focus + label {
+  color: #b5b5b5;
+}
+.filter-input:disabled + label {
+  color: #e9e9e9;
+}
+.filter-button {
+  font-family: "PT Sans", Arial, sans-serif;
+  color: #000000;
+  background-color:  #ffffff;
+  border-radius: 1px;
+}
+.catalog-item {
+  border: 1px solid #e5e5e5;
+}
+.catalog-item:hover {
+  box-shadow: 0 0 10px rgba(0,0,0, 0.5)
+}
+
+.category-name,
+.item-name {
+  font-family:  "PT Sans", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+}
+.main-price {
+  color: #ffffff;
+  background-color: #ee3643;
+}
+.last-price {
+  color: #999999;
+  text-decoration:line-through;
+}
+/* Footer */
+.footer-logo {
+  font-size: 30px;
+  line-height: 30px;
+  text-align: center;
+  vertical-align: middle;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background-color: #ee3643;
+}
+.main-footer {
+  background-color: #32425c;
+  color: #ffffff;
+}
+.footer-menu li {
+  list-style: none;
+}
+.footer-first-menu a {
+  color: #ffffff;
+}
+.footer-second-menu a {
+  color: #ffd180;
+}
+.footer-first-menu a:hover,
+.footer-second-menu a:hover {
+  text-decoration: underline;
+}
+.footer-first-menu a:active,
+.footer-second-menu a:active {
+  opacity: 0.5;
+}
+.footer-bottom {
+  background-color: #293449;
+}
+.footer-social {
+  background-color: #212a3a;
+  list-style: none;
+}
+address {
+  font-style: normal;
+}
+.feedback a,
+address a {
+  color: #ffd180;
+  font-style: normal;
+}
+.feedback a:hover,
+address a:hover {
+  text-decoration: underline;
+}
+.feedback a:active,
+address a:active {
+  color: #ee3643;
+}

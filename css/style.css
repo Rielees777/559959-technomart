@@ -18,7 +18,7 @@ h2 {
   line-height: 30px;
   text-transform: uppercase;
 }
-p {
+ .text-box {
   font-family: "PT Sans", Arial, sans-serif;
 
 }
@@ -49,6 +49,9 @@ p {
   background-color: #f3f7f8;
 }
 .index-header-logo {
+  width: 220px;
+  margin-bottom: 50px;
+
   font-size: 24px;
   line-height: 24px;
   text-align: center;
@@ -58,17 +61,28 @@ p {
 
   background-color: #ee3643;
 }
-.index-header-logo:focus,
+.index-header-logo:hover,
 .index-header-logo:active {
   background-color: #ba2732;
 }
 .top-menu {
+  width: 100%;
+  margin-bottom: 46px;
+  display: flex;
+  justify-content: center;
   background-color: #32425c;
 }
 .top-menu li {
   list-style: none;
+  padding: 14px auto;
+}
+.top-menu a {
+  text-align: center;
+  padding: 14px;
 }
 .search-nav {
+  width: 250px;
+
   color: #ffffff;
   background-color: #32425c;
 }
@@ -77,12 +91,13 @@ p {
 .basket:hover {
   background-color: #212a3a;
 }
-.search-nav:focus-within {
+.search-nav:focus {
   color: #000000;
   background-color: #ffffff;
 }
 .bookmarks,
 .basket {
+  text-align: center;
   color: #ffffff;
 }
 .bookmarks:active,
@@ -102,9 +117,18 @@ p {
   color: #a8c29a;
   background-color: #5fbb2d;
 }
+.container {
+  display: flex;
+  justify-content: center;
+}
 .header-description {
+  width: 220px;
+
   font-style: italic;
   color: #ee3643;
+}
+.header-contacts {
+  width: 270px;
 }
 .tel {
   color: #ee3643;
@@ -128,11 +152,7 @@ p {
 .registration-link a:hover {
   color: #ee3643;
 }
-.my-orders a:active,
-.my-account a:active,
-.login-name:active,
-.login-link a:active,
-.registration-link a:active {
+.login-menu a:active {
   color: #c5c5c5;
 }
 .login-link a,
@@ -142,6 +162,8 @@ p {
   background-color: #ffffff;
 }
 .nav-menu {
+  width: 940px;
+  margin: 0 10px;
   background-color: #32425c;
 }
 .site-menu li {
@@ -157,9 +179,24 @@ p {
   color: #8e939c;
   background-color: #1d2739;
 }
+
+.index-column {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 85px;
+}
+.about-us-anotation {
+  width: 540px;
+}
+.contact-info {
+  width: 320px;
+}
 .delivery-company li {
   list-style: none;
 }
+
+
 /* Catalog*/
 .page-title {
   background-color: #f2f6f8;
@@ -168,6 +205,9 @@ p {
   font-family: "PT Sans", Arial, sans-serif;
   list-style: none;
   text-transform: uppercase;
+}
+.filters {
+  width: 220px;
 }
 .filter fieldset {
   border: none;
@@ -193,7 +233,28 @@ p {
   background-color:  #ffffff;
   border-radius: 1px;
 }
+catalog {
+  width: 700px;
+}
+.catalog-columns {
+  display: flex;
+  justify-content: space-between;
+
+}
+.catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 52px;
+}
 .catalog-item {
+  width: 220px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+
+  text-align: center;
+
   border: 1px solid #e5e5e5;
 }
 .catalog-item:hover {
@@ -214,6 +275,7 @@ p {
   color: #999999;
   text-decoration:line-through;
 }
+
 /* Footer */
 .footer-logo {
   font-size: 30px;
@@ -247,6 +309,8 @@ p {
   opacity: 0.5;
 }
 .footer-bottom {
+  display: flex;
+  justify-content: space-between;
   background-color: #293449;
 }
 .footer-social {

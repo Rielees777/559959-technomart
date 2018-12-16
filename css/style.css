@@ -372,9 +372,7 @@ img {
   background-position: 0 0;
 
 }
-.login-menu a:active {
-  color: #c5c5c5;
-}
+
 .login-link a:active::before {
   content: "";
   top: 17px;
@@ -398,13 +396,13 @@ img {
 }
 .login-name a {
   padding-left: 48px;
-  padding-right: 65px;
+  padding-right: 5px;
   padding-top: 13px;
   padding-bottom: 13px;
 }
 .login-name::before {
   content:"";
-  top: 12px;
+  top: 14px;
   left: 14px;
 
   position: absolute;
@@ -422,24 +420,31 @@ img {
   background-repeat: no-repeat;
   background-position: 0 0;
 }
-.login-name::after {
-  content:"";
-  top: 14px;
-  left: 270px;
 
-  position: absolute;
+.login-menu a:active,
+.login-name:active::before{
+  color: #c5c5c5;
+
+  background-image: url(../img/icons/icon-user.svg);
+  background-repeat: no-repeat;
+  background-position: 14px 14px;
+}
+.logout {
 
   width: 20px;
   height: 17px;
+  padding: 24px 32px;
 
   background-image: url(../img/icons/icon-logout.svg);
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: 30px 15px;
+  background-color: #ffffff;
 }
-.login-name:hover::after {
+.logout:hover {
   background-image: url(../img/icons/icon-logout-hover.svg);
-  background-repeat: no-repeat;
-  background-position: 0 0;
+}
+.logout:active {
+  background-image: url(../img/icons/icon-logout.svg);
 }
 .my-orders {
   position: relative;

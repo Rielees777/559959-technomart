@@ -35,6 +35,7 @@ a {
   text-decoration: none;
 }
 h2 {
+  margin: 0;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
@@ -524,6 +525,7 @@ img {
 }
 .about-us-anotation h2 {
   font-size: 28px;
+  margin-bottom: 35px;
 }
 .about-us-anotation {
   width: 640px;
@@ -531,6 +533,7 @@ img {
   padding-bottom: 86px;
 }
 .delivery-company {
+  margin: 0;
   margin-bottom: 32px;
 }
 
@@ -546,6 +549,7 @@ img {
 }
 .text-box {
   width: 500px;
+  margin: 0;
   margin-bottom: 25px;
 
 
@@ -573,6 +577,9 @@ img {
   width: 300px;
   padding-top: 50px;
   padding-bottom: 86px;
+}
+.contact-info h2 {
+  margin-bottom: 35px;
 }
 .contact-info p {
   width: 180px;
@@ -606,6 +613,20 @@ img {
   font-family: "PT Sans", Arial, sans-serif;
   list-style: none;
   text-transform: uppercase;
+}
+.breadcrumps li:first-child {
+  width: 16px;
+  height: 16px;
+
+  background-image: url(../img/icons/icon-home.svg);
+  background-repeat: no-repeat;
+  background-position: 0 2px;
+
+}
+.breadcrumps .main {
+  position: absolute;
+  width: 16px;
+  height: 16px;
 }
 .breadcrumps li {
   position: relative;

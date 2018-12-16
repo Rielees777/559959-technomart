@@ -734,13 +734,16 @@ img {
 }
 .filter-button {
   padding: 10px 40px;
-  margin-top: 75px;
+  margin-top: 55px;
 
   font-family: "PT Sans", Arial, sans-serif;
   color: #000000;
   background-color:  #ffffff;
   border: 1px solid #c5c5c5;
   border-radius: 1px;
+
+  cursor: pointer;
+
 }
 
 .catalog {
@@ -807,6 +810,7 @@ img {
 
 }
 .catalog-item .item-img {
+  display: inline-block;
   margin-bottom: 25px;
 }
 .catalog-item .actions .buy,
@@ -875,12 +879,20 @@ img {
   display: block;
 }
 .catalog-item h3 {
-  min-height: 40px;
-  padding: 0 35px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin: 0;
+  padding: 10px 35px;
+
+  font-size: 18px;
+  line-height: 20px;
+
+}
+.prices {
+  padding: 0 45px;
+  padding-top: 15px;
+  padding-bottom: 20px
 }
 .catalog-item .last-price {
+  min-height: 20px;
   padding: 0;
 
   font-size: 17px;
@@ -891,8 +903,7 @@ img {
 .catalog-item .main-price {
   position: relative;
   width: 130px;
-  margin: 10px auto;
-  margin-bottom: 22px;
+  margin-top: 10px;
   padding: 10px 10px;
 
   font-size: 17px;
@@ -1101,6 +1112,23 @@ address a:active {
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
   background-image: linear-gradient(#ff5358 7px, #ffffff 7px, #ffffff 320px, #f4f4f4 320px);
 }
+@keyframes swing {
+  0%   {
+    transform: translate(-50%, -200%);
+  }
+
+  70% {
+    transform: translate(-50%, -48%);
+  }
+
+  90% {
+    transform: translate(-50%, -52%);
+  }
+  100% {
+    transform: translate(-50%, -50%);
+  }
+}
+
 .modal-close {
   position: absolute;
   top:15px;
@@ -1197,11 +1225,14 @@ address a:active {
   left: 50%;
 
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);
+  z-index: 20;
 }
 .modal-add-basket {
+  display: none;
   width: 620px;
+  transform: translate(-50%, -50%);
   top: 50%;
-  left: 34%;
+  left: 50%;
   padding: 55px 80px 38px;
 
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
@@ -1242,4 +1273,10 @@ address a:active {
 }
 .continue-shopping:hover {
   background-color: #cccccc;
+}
+.modal-show {
+  display: block;
+
+  animation-name: swing;
+  animation-duration: 0.6s;
 }

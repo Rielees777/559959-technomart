@@ -69,7 +69,6 @@ img {
   background-color: #ba2732;
 }
 .main-header {
-
   font-size: 17px;
   line-height: 18px;
   width: 100%;
@@ -521,12 +520,197 @@ img {
   background-color: #1d2739;
 }
 
-/* main content */
+/* Стили основного контента */
+
+
 .index-column {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 
+}
+.features{
+  margin-top: 60px;
+}
+.feature {
+  position: relative;
+  min-width: 300px;
+  height: 123px;
+
+  margin-bottom: 20px;
+  padding-top: 26px;
+  padding-left: 23px;
+  padding-bottom: 23px;
+
+  font-size: 24px;
+  line-height: 30px;
+  color: #ffffff;
+}
+.feature h3{
+  margin: 0;
+  padding: 0;
+  margin-bottom: 15px;
+
+}
+.feature .button{
+  width: 135px;
+  padding: 10px 0;
+
+  background-color: rgba(0,0,0, 0.1);
+  border-radius: 3px;
+}
+.feature .button:hover{
+  background-color: rgba(0,0,0, 0.2);
+}
+.feature .button:active{
+  background-color: rgba(0,0,0, 0.3);
+}
+.feature:nth-child(1){
+  background-color: #ffbf47;
+  background-image: url(../img/icons/paint.svg);
+  background-repeat: no-repeat;
+  background-position: 220px 40px;
+}
+.feature:nth-child(2){
+  background-color: #3bbce3;
+  background-image: url(../img/icons/drill.svg);
+  background-repeat: no-repeat;
+  background-position: 200px 40px;
+}
+.feature:nth-child(3){
+  background-color: #dc91d8;
+  background-image: url(../img/icons/technique.svg);
+  background-repeat: no-repeat;
+  background-position: 200px 40px;
+}
+.feature-wrap .feature:nth-child(1){
+  background-color: #8ed78f;
+  background-image: url(../img/icons/big-basket.svg);
+  background-repeat: no-repeat;
+  background-position: 220px 35px;
+}
+.feature-wrap .feature:nth-child(2){
+  background-color: #ffbf47;
+  background-image: url(../img/icons/delivery-car.svg);
+  background-repeat: no-repeat;
+  background-position: 200px 40px;
+}
+
+.slider{
+  position: relative;
+  margin-bottom: 20px;
+
+}
+
+.slider-button {
+  position: absolute;
+  top: 205px;
+  left: 25px;
+  padding-left: 49px;
+  padding-right: 45px;
+}
+.slider-button-next{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 120px;
+  left: 565px;
+
+  border: none;
+  border-top: 4px solid #ffffff;
+  border-right: 4px solid #ffffff;
+  transform: rotate(45deg);
+  background-color: transparent;
+}
+.slider-button-back{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 120px;
+  left: 30px;
+
+  border: none;
+  border-top: 4px solid #ffffff;
+  border-right: 4px solid #ffffff;
+  transform: rotate(-135deg);
+  background-color: transparent;
+}
+.slide-title {
+  position: absolute;
+  margin: 0;
+  top: 25px;
+  left: 25px;
+
+  font-size: 36px;
+  line-height: 36px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.slide-text{
+  position: absolute;
+  margin: 0;
+  top: 60px;
+  left: 25px;
+
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+}
+.popular-products .button {
+  padding: 12px 55px;
+  border: none;
+}
+.popular-products-catalog .catalog-item {
+  margin-right: 0;
+}
+.title {
+  padding:26px 0;
+  padding-left: 30px;
+  padding-right: 26px;
+  margin-bottom: 20px;
+
+  background-color: #f9f5f0;
+}
+.popular-manufacturer .button {
+  padding: 12px 70px;
+  border: none;
+}
+.manufacture-catalog{
+  margin-bottom: 66px;
+}
+.manufacturer-item {
+  flex-basis: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 145px;
+
+  margin-bottom: 20px;
+
+  border: solid 1px #f9f5f0;
+}
+.manufacturer-item:hover{
+  box-shadow: 0 0 25px rgba(0,0,0, 0.5);
+}
+.manufacturer-item:active{
+  box-shadow: 0 0 20px rgba(0,0,0, 0.5);
+  opacity: 0.3;
+}
+
+.services {
+  width: 100%;
+  padding-top: 68px;
+  padding-bottom: 102px;
+  margin-bottom: 50px;
+
+  background-color: #f4f8f9;
+}
+
+.delivery {
+  display: flex;
+  justify-content: space-between;
 }
 .about-us-anotation h2 {
   font-size: 28px;
@@ -534,7 +718,6 @@ img {
 }
 .about-us-anotation {
   width: 640px;
-  padding-top: 50px;
   padding-bottom: 86px;
 }
 .delivery-company {
@@ -580,7 +763,6 @@ img {
 }
 .contact-info {
   width: 300px;
-  padding-top: 50px;
   padding-bottom: 86px;
 }
 .contact-info h2 {
@@ -772,6 +954,10 @@ img {
 
 }
 
+
+
+
+
 .catalog {
   width: 700px;
   margin: 20px auto;
@@ -792,6 +978,7 @@ img {
   position: relative;
   display: inline-block;
   width: 220px;
+  margin: 0;
   margin-bottom: 20px;
   margin-right: 20px;
   padding-top: 28px;
@@ -810,7 +997,8 @@ img {
 .catalog-item{
   font-size:16px;
 }
-.catalog-item .flag {
+.catalog-item .flag,
+.feature .flag {
   position: absolute;
   top: -1px;
   right: -1px;
@@ -820,7 +1008,8 @@ img {
   overflow: hidden;
   z-index: 20;
 }
-.catalog-item .flag-new {
+.catalog-item .flag-new,
+.feature .flag-new {
   background-image: url(../img/new-flag.png);
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -950,7 +1139,7 @@ img {
 }
 
 .catalog-item:hover {
-  box-shadow: 0 0 25px rgba(0,0,0, 0.5)
+  box-shadow: 0 0 25px rgba(0,0,0, 0.5);
 }
 
 

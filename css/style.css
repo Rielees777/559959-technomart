@@ -710,7 +710,74 @@ img {
 
 .delivery {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+}
+
+.services p {
+  width: 440px;
+  margin-bottom: 75px;
+
+  font-family: "PT Sans", Arial, sans-serif;
+}
+.delivery .conditions {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  margin-right: 80px;
+
+  list-style: none;
+}
+.delivery .conditions::after{
+  content: "";
+  position: absolute;
+  top: -40px;
+  left: 240px;
+
+
+  width: 10px;
+  height: 280px;
+  background-image: url(../img/services-shadow.png);
+  z-index: 50;
+}
+.conditions button{
+  width: 250px;
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 22px;
+  padding-left: 22px;
+
+  font-size: 21px;
+  color: #ffffff;
+  text-align: left;
+  background-color: #32425c;
+
+  border-top:1px solid #405069;
+  border-bottom:1px solid #293449;
+}
+.conditions button:not([disabled]):hover {
+  background-color: #293449;
+}
+.conditions .active-button {
+  border: none;
+  background-color: #ffffff;
+
+  color: #32425c;
+}
+.description p{
+  width: 275px;
+}
+.description h2{
+  color: #32425c;
+}
+.delivery .conditions::before {
+  content: "";
+  position: absolute;
+  width: 468px;
+  height: 261px;
+  left: 450px;
+
+  background-image: url(../img/delivery-car.png);
+  background-repeat: no-repeat;
 }
 .about-us-anotation h2 {
   font-size: 28px;

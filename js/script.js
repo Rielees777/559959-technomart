@@ -8,7 +8,6 @@ var map_close = map_popup.querySelector(".modal-close")
 
 
 
-
 feedback_link.addEventListener("click", function(evt){
   evt.preventDefault();
   feedback_popup.classList.add("modal-show");
@@ -45,4 +44,5 @@ document.addEventListener("keydown", function(evt){
     }
   }
 });
+
 

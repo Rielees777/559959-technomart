@@ -74,11 +74,16 @@
             <button class="slider-button-next"></button>
             <button class="slider-button-back"></button>
             <div class="slide">
+              <h3 class="slide-title">Перфораторы</h3>
+              <p class="slide-text">Настоящие мужские игрушки</p>
+              <img class="slide-2" src="img/slide-2.jpg" width="620px" height="266px">
+            </div>
+            <div class="slide">
               <h3 class="slide-title">Дрели</h3>
               <p class="slide-text">Соседям на радость!</p>
               <img class="slide-1" src="img/slide-1.jpg" width="620px" height="266px">
-            <a class="button slider-button" href="catalog.html">Открыть каталог</a>
             </div>
+            <a class="button slider-button" href="catalog.html">Открыть каталог</a>
           </section>
           <div class="feature-wrap">
             <section class="feature">
@@ -160,14 +165,14 @@
           </div>
         </section>
         <section class="index-column manufacture-catalog">
-            <a class="manufacturer-item" href="#"><img src="/img/bosch.jpg" alt="Bosch" width="126" height="37" aria-label="Bosch"></a>
-            <a class="manufacturer-item" href="#"><img src="/img/Makita.jpg" alt="Makita" width="123" height="40" aria-label="Makita"></a>
-            <a class="manufacturer-item" href="#"><img src="/img/DeWALT.jpg" alt="DeWALT" width="146" height="44" aria-label="DeWALT"></a>
-            <a class="manufacturer-item" href="#"><img src="/img/Interskol.jpg" alt="Интерскол" width="200" height="88" aria-label="Интерскол"></a>
-            <a class="manufacturer-item" href="#"><img src="/img/Hitachi.jpg" alt="Hitachi" width="169" height="31" ></a>
-            <a class="manufacturer-item" href="#"><img src="/img/LG.jpg" alt="LG" width="121" height="73" ></a>
-            <a class="manufacturer-item" href="#"><img src="/img/AEG.jpg" alt="AEG" width="151" height="96"></a>
-            <a class="manufacturer-item" href="#"><img src="/img/Metabo.jpg" alt="Metabo" width="204" height="69" ></a>
+          <a class="manufacturer-item" href="#"><img src="img/bosch.jpg" alt="Bosch" width="126" height="37" aria-label="Bosch"></a>
+          <a class="manufacturer-item" href="#"><img src="img/Makita.jpg" alt="Makita" width="123" height="40" aria-label="Makita"></a>
+          <a class="manufacturer-item" href="#"><img src="img/DeWALT.jpg" alt="DeWALT" width="146" height="44" aria-label="DeWALT"></a>
+          <a class="manufacturer-item" href="#"><img src="img/Interskol.jpg" alt="Интерскол" width="200" height="88" aria-label="Интерскол"></a>
+          <a class="manufacturer-item" href="#"><img src="img/Hitachi.jpg" alt="Hitachi" width="169" height="31" ></a>
+          <a class="manufacturer-item" href="#"><img src="img/LG.jpg" alt="LG" width="121" height="73" ></a>
+          <a class="manufacturer-item" href="#"><img src="img/AEG.jpg" alt="AEG" width="151" height="96"></a>
+          <a class="manufacturer-item" href="#"><img src="img/Metabo.jpg" alt="Metabo" width="204" height="69" ></a>
         </section>
       </div>
       <section class="services">
@@ -175,20 +180,38 @@
           <h2>Сервисы</h2>
           <p>Хороший интернет-магазин отличается от плохого не только ценами!
             Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-          <section class="delivery">
-            <ul class="conditions">
-              <li><button class="active-button" disabled>Доставка</button></li>
-              <li><button>Гарантия</button></li>
-              <li><button>Кредит</button></li>
-            </ul>
-            <section class="description">
-              <h2>Доставка</h2>
-              <p>Мы с удовольствием доставим ваш товар прямо
-                к вашему подъезду совершенно бесплатно!
-                Ведь мы неплохо заработаем,
-                поднимая его на ваш этаж!</p>
-            </section>
-          </section>
+          <ul class="conditions">
+            <li>
+              <input class="visually-hidden service-button" name="service-btn" type="radio" id="delivery-btn">
+              <label for="delivery-btn">Доставка</label>
+              <section class="delivery">
+                <h2>Доставка</h2>
+                <p>Мы с удовольствием доставим ваш товар прямо
+                  к вашему подъезду совершенно бесплатно!
+                  Ведь мы неплохо заработаем,
+                  поднимая его на ваш этаж!</p>
+              </section>
+            </li>
+            <li>
+              <input class="visually-hidden service-button" type="radio" name="service-btn" id="guarantee-btn">
+              <label for="guarantee-btn">Гарантия</label>
+              <section class="guarantee">
+                <h2>Гарантия</h2>
+                <p>Если купленный у нас товар поломается или заискрит,
+                  а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.
+                  Дом уж восстановите как-нибудь сами.</p>
+              </section>
+            </li>
+            <li>
+              <input class="visually-hidden service-button" type="radio" name="service-btn" id="kredit-btn">
+              <label for="kredit-btn">Кредит</label>
+              <section class="kredit">
+                <h2>Кредит</h2>
+                <p>Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
+                <button class="button">Отправить заявку</button>
+              </section>
+            </li>
+          </ul>
         </div>
       </section>
       <div class="index-column container">

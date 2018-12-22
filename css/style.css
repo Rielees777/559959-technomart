@@ -180,7 +180,7 @@ img {
 
   color: #ffffff;
 }
-.top-menu .buy {
+.top-menu .add-item {
   background-color: #ee3643;
 }
 .bookmarks:active,
@@ -658,6 +658,9 @@ img {
   line-height: 24px;
   color: #ffffff;
 }
+.slide:nth-child(3){
+  display: none;
+}
 .popular-products .button {
   padding: 12px 55px;
   border: none;
@@ -707,10 +710,16 @@ img {
 
   background-color: #f4f8f9;
 }
+.conditions {
+  position: relative;
+  padding: 0;
 
-.delivery {
+  list-style: none;
+}
+.conditions li {
   display: flex;
-  justify-content: flex-start;
+  justify-content:flex-start;
+
 }
 
 .services p {
@@ -719,7 +728,7 @@ img {
 
   font-family: "PT Sans", Arial, sans-serif;
 }
-.delivery .conditions {
+.service-item .conditions {
   position: relative;
   margin: 0;
   padding: 0;
@@ -727,7 +736,7 @@ img {
 
   list-style: none;
 }
-.delivery .conditions::after{
+.conditions::after{
   content: "";
   position: absolute;
   top: -40px;
@@ -737,11 +746,12 @@ img {
   width: 10px;
   height: 280px;
   background-image: url(../img/services-shadow.png);
-  z-index: 50;
 }
-.conditions button{
+.conditions label {
+  display: block;
   width: 250px;
   margin: 0;
+  margin-right: 0px;
   padding-top: 20px;
   padding-bottom: 22px;
   padding-left: 22px;
@@ -751,36 +761,92 @@ img {
   text-align: left;
   background-color: #32425c;
 
+  border: none;
   border-top:1px solid #405069;
   border-bottom:1px solid #293449;
+  cursor: pointer;
 }
-.conditions button:not([disabled]):hover {
+.conditions label:hover{
   background-color: #293449;
 }
-.conditions .active-button {
-  border: none;
+.service-button:checked + label{
   background-color: #ffffff;
+  color: #32425c;
+  border: none;
+}
+
+.delivery,
+.guarantee,
+.kredit {
+  display: none;
+  padding-left: 20px;
+}
+.delivery p,
+.guarantee p,
+.kredit p {
+  position: absolute;
+  top: 40px;
+  width: 300px;
+  margin: 0;
+  padding-bottom: 30px;;
+}
+.delivery h2,
+.guarantee h2,
+.kredit h2 {
+  position: absolute;
+  top: 0;
 
   color: #32425c;
 }
-.description p{
-  width: 275px;
+.kredit .button {
+  border: none;
 }
-.description h2{
-  color: #32425c;
-}
-.delivery .conditions::before {
+.delivery::after {
   content: "";
   position: absolute;
   width: 468px;
   height: 261px;
+  top: 0px;
   left: 450px;
 
   background-image: url(../img/delivery-car.png);
   background-repeat: no-repeat;
 }
+.guarantee::after {
+  content: "";
+  position: absolute;
+  width: 468px;
+  height: 261px;
+  top: 0px;
+  left: 450px;
+
+  background-image: url(../img/garantee.png);
+  background-repeat: no-repeat;
+}
+.kredit::after {
+  content: "";
+  position: absolute;
+  width: 468px;
+  height: 261px;
+  top: 0px;
+  left: 450px;
+
+  background-image: url(../img/kredit.png);
+  background-repeat: no-repeat;
+}
+.conditions .active {
+  border: none;
+  background-color: #ffffff;
+
+  color: #32425c;
+}
+.service-button:checked ~ .delivery,
+.service-button:checked ~ .guarantee,
+.service-button:checked ~ .kredit {
+  display: block;
+}
+
 .about-us-anotation h2 {
-  font-size: 28px;
   margin-bottom: 35px;
 }
 .about-us-anotation {

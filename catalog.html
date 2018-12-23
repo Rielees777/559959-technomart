@@ -66,10 +66,22 @@
           <section class="filters">
             <h2 class="visually-hidden">Фильтр товаров</h2>
             <!-- Фильтрация по производителям -->
+            <div class="filter-title">Фильтр:</div>
             <form class="filter" action="" method="get">
-              <fieldset>
+              <fieldset class="filter-range">
                 <legend>Цена:</legend>
-
+                <section class="range-controls">
+                  <div class="scale">
+                    <div class="bar">
+                      <div class="range-toggle range-toggle-min"></div>
+                      <div class="range-toggle range-toggle-max"></div>
+                    </div>
+                  </div>
+                </section>
+                <section class="price-controls">
+                  <label class="min-price"><input type="text" name="min-price" value="0"></label>
+                  <label class="max-price"><input type="text" name="max-price" value="30000"></label>
+                </section>
               </fieldset>
               <hr>
               <fieldset>
@@ -119,8 +131,17 @@
               </button>
             </form>
           </section>
-          <!-- Здесь будут элементы для сортировки каталога -->
+
           <section class="catalog">
+            <section class="sort">
+              <p class="sort-title">Сортировка:</p>
+              <button class="sort-btn by-price" disabled>По цене</button>
+              <button class="sort-btn by-type">По типу</button>
+              <button class="sort-btn by-functional">По функционалу</button>
+              <button class="sort-btn-arrow up-arrow" aria-label="сортировка по возрастанию" disabled></button>
+              <button class="sort-btn-arrow down-arrow" aria-label="сортировка по убыванию"></button>
+            </section>
+
             <h2 class="visually-hidden">Список перфораторов</h2>
             <section class="catalog-list">
               <article class="catalog-item">
@@ -234,12 +255,25 @@
                   <div class="main-price" >12500 Р.</div>
                 </div>
               </article>
+              <ul class="pagination-list">
+                <li class="pagination-item pagination-item-current"><a>1</a></li>
+                <li class="pagination-item"><a href="#">2</a></li>
+                <li class="pagination-item"><a href="#">3</a></li>
+                <li class="pagination-item"><a href="#">Следующая</a></li>
+              </ul>
             </section>
-            <!-- Остальной  контент -->
           </section>
         </div>
       </div>
-
+      <section class="product-description">
+        <div class="container">
+          <h2>Пара слов о перфораторах</h2>
+          <p>
+            Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
+            Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
+          </p>
+        </div>
+      </section>
 
 
       <section class="modal modal-add-basket">

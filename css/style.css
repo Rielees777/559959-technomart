@@ -310,6 +310,7 @@ img {
   display: flex;
   flex-wrap: wrap;
 
+
   width: 300px;
   padding: 0;
   margin: 0;
@@ -394,6 +395,7 @@ img {
 
 }
 .login-name a {
+  max-width: 235px;
   padding-left: 48px;
   padding-right: 5px;
   padding-top: 13px;
@@ -429,10 +431,9 @@ img {
   background-position: 14px 14px;
 }
 .logout {
-
-  width: 20px;
-  height: 17px;
-  padding: 24px 31px;
+  max-width: 20px;
+  max-height: 17px;
+  padding: 24px 32px;
 
   background-image: url(../img/icons/icon-logout.svg);
   background-repeat: no-repeat;

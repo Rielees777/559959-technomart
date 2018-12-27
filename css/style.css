@@ -721,9 +721,64 @@ img {
   line-height: 24px;
   color: #ffffff;
 }
-.slide:nth-child(3){
+.slide:not(.active),
+.slider-control-item--1{
   display: none;
 }
+.slider-controls {
+  position: absolute;
+  left: 307px;
+  bottom: 38px;
+  z-index: 100;
+
+  width: 60px;
+  height: 15px;
+
+  text-align: center;
+  font-size: 0;
+  transform: translateX(-50%);
+}
+.slider-controls .slider-control-item {
+  position: relative;
+
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  padding: 10px;
+
+  border-radius: 50%;
+  cursor: pointer;
+}
+.slider-controls .slider-control-item::after {
+  content: "";
+
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  z-index: 1;
+
+  width: 10px;
+  height: 10px;
+
+  background: #ffffff;
+
+  border-radius: 50%;
+}
+.slider-controls .slider-control-item--2::before {
+  content: "";
+
+  position: absolute;
+  top: 10px;
+  left:10px;
+  z-index: 2;
+
+  width: 6px;
+  height: 6px;
+  background-color: #ee3643;
+
+  border-radius: 50%;
+}
+
 .popular-products .button {
   padding: 12px 55px;
   border: none;

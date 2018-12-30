@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Техномарт</title>
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/min-style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="inner-page">
     <header class="main-header">
@@ -134,11 +134,11 @@
           <section class="catalog">
             <section class="sort">
               <p class="sort-title">Сортировка:</p>
-              <button class="sort-btn by-price" disabled>По цене</button>
-              <button class="sort-btn by-type">По типу</button>
-              <button class="sort-btn by-functional">По функционалу</button>
-              <button class="sort-btn-arrow up-arrow" aria-label="сортировка по возрастанию" disabled></button>
-              <button class="sort-btn-arrow down-arrow" aria-label="сортировка по убыванию"></button>
+              <a class="active sort-btn by-price">По цене</a>
+              <a class="sort-btn by-type" href="sort-by-type.html">По типу</a>
+              <a class="sort-btn by-functional" href="sort-by-functional.html">По функционалу</a>
+              <a class="active-arrow sort-btn-arrow up-arrow" aria-label="сортировка по возрастанию"></a>
+              <a class="sort-btn-arrow down-arrow" href="sort-down.html" aria-label="сортировка по убыванию"></a>
             </section>
 
             <h2 class="visually-hidden">Список перфораторов</h2>
@@ -260,15 +260,16 @@
                   <div class="main-price" >12500 Р.</div>
                 </div>
               </article>
-              <ul class="pagination-list">
-                <li class="pagination-item pagination-item-current"><a>1</a></li>
-                <li class="pagination-item"><a href="#">2</a></li>
-                <li class="pagination-item"><a href="#">3</a></li>
-                <li class="pagination-item"><a href="#">Следующая</a></li>
-              </ul>
             </section>
+            <ul class="pagination-list" aria-label="Пагинация">
+              <li class="pagination-item pagination-item-current"><a>1</a></li>
+              <li class="pagination-item"><a href="#">2</a></li>
+              <li class="pagination-item"><a href="#">3</a></li>
+              <li class="pagination-item"><a href="#">Следующая</a></li>
+            </ul>
           </section>
         </div>
+
       </div>
       <section class="product-description">
         <div class="container">
@@ -327,7 +328,7 @@
           </p>
           <address>
             Разработано -
-            <a href="htmlacademy.ru" target="_blank">htmlacademy.ru</a>
+            <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">htmlacademy.ru</a>
           </address>
         </div>
       </div>

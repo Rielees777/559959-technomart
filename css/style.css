@@ -847,21 +847,19 @@ a {
 .services {
   width: 100%;
   padding-top: 64px;
-  padding-bottom: 92px;
+  padding-bottom: 103px;
   margin-bottom: 77px;
 
   background-color: #f4f8f9;
 }
 .conditions {
+  display: flex;
+  justify-content:flex-start;
+
   position: relative;
   padding: 0;
 
   list-style: none;
-}
-.conditions li {
-  display: flex;
-  justify-content:flex-start;
-
 }
 .services h2 {
   margin: 0;
@@ -878,15 +876,9 @@ a {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
-}
-.service-item .conditions {
-  position: relative;
-  margin: 0;
-  padding: 0;
-  margin-right: 80px;
 
-  list-style: none;
 }
+
 .conditions::after{
   content: "";
   position: absolute;
@@ -898,13 +890,13 @@ a {
   height: 280px;
   background-image: url(../img/services-shadow.png);
 }
-.conditions label {
+.service-items label {
   display: block;
   width: 240px;
   margin: 0;
   margin-right: 0px;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 21px;
   padding-left: 22px;
 
   font-size: 22px;
@@ -917,27 +909,41 @@ a {
   border-bottom:1px solid #293449;
   cursor: pointer;
 }
-.conditions label:hover,
-.conditions label:focus{
+.service-items label:hover,
+.service-items label:focus{
   background-color: #293449;
 }
-.service-button:checked + label{
+#delivery-btn:checked ~ .service-items .service-1,
+#guarantee-btn:checked ~ .service-items .service-2,
+#kredit-btn:checked ~ .service-items .service-3{
   background-color: #ffffff;
   color: #32425c;
   border: none;
 }
-
-.delivery,
-.guarantee,
-.kredit {
+.slider-list{
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+.slider-list li {
   display: none;
+
   padding-left: 80px;
+
+  list-style: none;
+}
+ #delivery-btn:checked ~ .slider-list .delivery {
+  display: block;
+}
+ #guarantee-btn:checked ~ .slider-list .guarantee {
+  display: block;
+}
+ #kredit-btn:checked ~ .slider-list .kredit {
+  display: block;
 }
 .delivery p,
 .guarantee p,
 .kredit p {
-  position: absolute;
-  top: 58px;
   width: 300px;
   margin: 0;
 
@@ -947,12 +953,10 @@ a {
 .delivery h2,
 .guarantee h2,
 .kredit h2 {
-  position: absolute;
-  top: -3px;
 
   color: #32425c;
   font-size: 35px;
-  line-height: 36px;
+  line-height: 32px;
 }
 .kredit .button {
   margin-top: 20px;
@@ -965,7 +969,7 @@ a {
   width: 468px;
   height: 261px;
   top: 20px;
-  left: 472px;
+  left: 232px;
 
   background-image: url(../img/delivery-car.png);
   background-repeat: no-repeat;
@@ -976,7 +980,7 @@ a {
   width: 468px;
   height: 261px;
   top: 0px;
-  left: 535px;
+  left: 275px;
 
   background-image: url(../img/garantee.png);
   background-repeat: no-repeat;
@@ -987,22 +991,13 @@ a {
   width: 468px;
   height: 261px;
   top: 0px;
-  left: 480px;
+  left: 240px;
 
   background-image: url(../img/kredit.png);
   background-repeat: no-repeat;
 }
-.conditions .active {
-  border: none;
-  background-color: #ffffff;
 
-  color: #32425c;
-}
-.service-button:checked ~ .delivery,
-.service-button:checked ~ .guarantee,
-.service-button:checked ~ .kredit {
-  display: block;
-}
+
 .about-us-anotation {
   width: 640px;
   margin-bottom: 84px;
